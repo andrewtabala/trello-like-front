@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { TrelloContextProvider } from './trelloContext'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TrelloContextProvider>
+      <App />
+    </TrelloContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
